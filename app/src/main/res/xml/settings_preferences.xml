@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory
+        android:title="Comfirmation"
+        android:key="category"
+        android:selectable="false">
+        <SwitchPreference android:title="Data Changes"
+            android:defaultValue="true"
+            android:summary="This option, if selected, will allow the application to ask for a confirmation when you want to delete certain data."
+            android:key="applicationConfirmation" />
+        <SwitchPreference android:title="Interaction"
+            android:defaultValue="true"
+            android:summary="If certain buttons are too small or your fingers too large, the application will ask you to confirm that you have pressed the right button."
+            android:key="applicationInteractionConfirmation" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Report"
+        android:key="category"
+        android:selectable="false">
+        <EditTextPreference
+            android:key="emailReceiver1"
+            android:title="First Receiver"
+            android:summary="Here you can formulate a first standard receiver of a report."
+            android:defaultValue=""
+            android:dialogTitle="Fill in standard receiver."
+            android:hint="example@mail.com"/>
+        <EditTextPreference
+            android:key="emailReceiver2"
+            android:title="Second Receiver"
+            android:summary="Here you can formulate a second standard receiver of a report."
+            android:defaultValue=""
+            android:dialogTitle="Fill in standard receiver."
+            android:hint="example@mail.com"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Layout"
+        android:key="category"
+        android:selectable="false">
+        <SwitchPreference android:title="Standard colors"
+            android:defaultValue="true"
+            android:summary="If selected, the application displays the standard colors. Uncheck this option to choose your own colors."
+            android:key="colorStandard" />
+        <Preference android:title="Actionbar Color"
+            android:key="colorActionbar"
+            android:summary="Please provide the color you want for the actionbar.">
+        </Preference>
+        <Preference android:title="Background Color"
+            android:key="colorBackground"
+            android:summary="Please provide the color you want for the background."></Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

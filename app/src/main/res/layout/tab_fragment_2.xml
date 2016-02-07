@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ebm="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.eazegraph.lib.charts.PieChart
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/piechart"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:padding="8dp"
+        app:egLegendTextSize="16sp"
+        app:egUsePieRotation="true"
+        app:egValueTextSize="35sp"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <lt.lemonlabs.android.expandablebuttonmenu.ExpandableMenuOverlay
+        android:id="@+id/button_menu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/combo_chart_dark"
+
+        ebm:dimAmount="0.8"
+
+        ebm:mainButtonSize="0.22"
+        ebm:otherButtonSize="0.2"
+        ebm:distanceY="0.3"
+        ebm:distanceX="0.35"
+        ebm:bottomPad="0.12"
+
+        ebm:closeButtonSrc="@drawable/combo_chart"
+        ebm:leftButtonSrc="@drawable/calendar"
+        ebm:midButtonSrc="@drawable/box_filled"
+        ebm:rightButtonSrc="@drawable/excel"
+
+        ebm:leftButtonText="@string/action_left"
+        ebm:midButtonText="@string/action_mid"
+        ebm:rightButtonText="@string/action_right"/>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        tools:context=".MyActivity"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:id="@+id/toolbar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name of storage place"
+        android:ems="10"
+        android:id="@+id/editTextName"
+        android:width="280dp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editTextAddress"
+        android:text="Postal Address"
+        android:width="280dp"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextZip"
+        android:text="Zip code"
+        android:width="90dp"
+        android:layout_below="@+id/editTextAddress"
+        android:layout_alignLeft="@+id/editTextName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextCity"
+        android:width="180dp"
+        android:text="City"
+        android:layout_below="@+id/editTextAddress"
+        android:layout_alignRight="@+id/editTextAddress"
+        android:layout_alignEnd="@+id/editTextAddress" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/cancelStoragePlaceButton"
+        android:textSize="17sp"
+        android:background="@null"
+        android:textColor="@color/white"
+        android:text="CANCEL"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:layout_above="@+id/editTextName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/editStoragePlaceButton"
+        android:textSize="17sp"
+        android:background="@null"
+        android:textColor="@color/white"
+        android:text="EDIT"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:layout_above="@+id/editTextName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

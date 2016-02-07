@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButtonStoragePlaces"
+        android:background="@drawable/storageplaces_settings"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButtonInventory"
+        android:background="@drawable/inventory_settings"
+        android:layout_alignTop="@+id/imageButtonStoragePlaces"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButtonCategories"
+        android:background="@drawable/categories_settings"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_above="@+id/imageButtonHelp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButtonPreferences"
+        android:background="@drawable/preferences_settings"
+        android:layout_alignTop="@+id/imageButtonHelp"
+        android:layout_alignLeft="@+id/imageButtonStoragePlaces"
+        android:layout_alignStart="@+id/imageButtonStoragePlaces" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButtonHelp"
+        android:background="@drawable/help_settings"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageButtonInventory"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

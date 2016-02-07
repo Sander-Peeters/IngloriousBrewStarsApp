@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        tools:context=".MyActivity"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:id="@+id/toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/buttonSubmitInventory"
+        android:textSize="17sp"
+        android:background="@null"
+        android:textColor="@color/white"
+        android:text="SUBMIT"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:layout_alignBaseline="@+id/titleadvanced"
+        android:layout_alignBottom="@+id/titleadvanced"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Storage place advanced"
+        android:id="@+id/titleadvanced"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textViewTittleAdd"
+        android:layout_alignStart="@+id/textViewTittleAdd"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewInventory"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="70dp"
+        android:id="@+id/textView2"
+        android:background="@color/white"
+        android:layout_alignTop="@+id/listViewInventory"
+        android:layout_alignLeft="@+id/listViewInventory"
+        android:layout_alignStart="@+id/listViewInventory"
+        android:layout_marginTop="165dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Add items"
+        android:id="@+id/textViewTittleAdd"
+        android:layout_marginBottom="85dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginLeft="1dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="items"
+        android:id="@+id/textViewBoxAdd"
+        android:textSize="17dp"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:id="@+id/buttonAddItem"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:background="#3F51B5"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextItemsAdd"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/titleadvanced"
+        android:layout_alignStart="@+id/titleadvanced"
+        android:layout_alignBottom="@+id/textView2"
+        android:background="@android:color/transparent"
+        android:hint="0"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:text=""
+        android:layout_toLeftOf="@+id/textViewBoxAdd"
+        android:layout_toStartOf="@+id/textViewBoxAdd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Substract items"
+        android:id="@+id/textView14"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/textViewTittleAdd"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15" />
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="70dp"
+        android:id="@+id/textView15"
+        android:background="@color/white"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignRight="@+id/listViewInventory"
+        android:layout_alignEnd="@+id/listViewInventory" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextItemsSubstract"
+        android:background="@android:color/transparent"
+        android:hint="0"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:text=""
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_toLeftOf="@+id/textView16"
+        android:layout_toStartOf="@+id/textView16" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="items"
+        android:id="@+id/textView16"
+        android:textSize="17dp"
+        android:layout_alignTop="@+id/textViewBoxAdd"
+        android:layout_alignRight="@+id/textView15"
+        android:layout_alignEnd="@+id/textView15" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBSTRACT"
+        android:id="@+id/buttonSubstractItem"
+        android:background="#3F51B5"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/buttonAddItem"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_alignEnd="@+id/textView16" />
+
+</RelativeLayout>
